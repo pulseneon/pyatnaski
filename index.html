@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>pyatnashki</title>
+</head>
+
+<body>
+    <script src="game.js"></script>
+    <script type="text/javascript">
+        window.onload = start;
+    </script>
+    <div class="container">
+        <p style="font-size: 22px; padding-left: 5px;" id="moves"></p>
+        <table>
+            <tr>
+                <td onClick="swapArea(0, 0)" id="t0">1</td>
+                <td onClick="swapArea(0, 1)" id="t1">2</td>
+                <td onClick="swapArea(0, 2)" id="t2">3</td>
+                <td onClick="swapArea(0, 3)" id="t3">4</td>
+            </tr>
+            <tr>
+                <td onClick="swapArea(1, 0)" id="t4">5</td>
+                <td onClick="swapArea(1, 1)" id="t5">6</td>
+                <td onClick="swapArea(1, 2)" id="t6">7</td>
+                <td onClick="swapArea(1, 3)" id="t7">8</td>
+            </tr>
+            <tr>
+                <td onClick="swapArea(2, 0)" id="t8">9</td>
+                <td onClick="swapArea(2, 1)" id="t9">10</td>
+                <td onClick="swapArea(2, 2)" id="t10">11</td>
+                <td onClick="swapArea(2, 3)" id="t11">12</td>
+            </tr>
+            <tr>
+                <td onClick="swapAreaDown(3, 0)" id="t12">13</td>
+                <td onClick="swapAreaDown(3, 1)" id="t13">14</td>
+                <td onClick="swapAreaDown(3, 2)" id="t14">15</td>
+                <td onClick="swapAreaDown(3, 3)" id="t15"></td>
+            </tr>
+        </table>
+        <button onClick="start()">Рестарт</button>
+    </div>
+</body>
+
+</html>
